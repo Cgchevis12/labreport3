@@ -5,19 +5,25 @@ should reverse the order of the elements in the array. For example, an array wit
 order 1,2,3 would be reverse to 3,2,1
 
 A failure-including input for the buggy program(testReverseInPlace):
+
 ![ing](1.png)
 
 An input that doesn't indce a failure:
+
 ![ing](2.png)
 
 The symptom:
+
 ![ing](3.png)
+
 ![ing](4.png)
 
 The bug before fix:
+
 ![ing](5.png)
 
 The bug after fix:
+
 ![ing](6.png)
 
 Before I describe why the fix could address the issue,
