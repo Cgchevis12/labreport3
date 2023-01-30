@@ -22,7 +22,7 @@ The bug before fix:
 
 ![ing](5.png)
 
-The bug after fix:
+The code after bug fix:
 
 ![ing](6.png)
 
