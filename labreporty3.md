@@ -1,19 +1,19 @@
 Part1:
 The code of StringServer:
 
-pic10
+![ing](10.png)
 
 The Screenshot of the outcome of adding:Hello
 
-pic7
+![ing](7.png)
 
 The Screenshot of /add-messag: Hello
 
-Pic8
+![ing](8.png)
 
 The Screenshot of /add-messag: How are you
 
-Pic9
+![ing](9.png)
 
 The methods that are called: HandleRequest
 
