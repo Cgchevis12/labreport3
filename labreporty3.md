@@ -1,3 +1,22 @@
+Part1:
+The code of StringServer:
+
+pic10
+
+The Screenshot of the outcome of adding:Hello
+
+pic7
+
+The Screenshot of /add-messag: Hello
+
+Pic8
+
+The Screenshot of /add-messag: How are you
+
+Pic9
+
+The methods that are called: HandleRequest
+
 Part2:
 
 Intro: I'm going to introduce a bug from method testReverseInPlace. This method
