@@ -71,12 +71,31 @@ The symptom:
 ![ing](C.png)
 
 The bug before fix:
-
-![ing](5.png)
+<pre><code>
+    static void reverseInPlace(int[] arr) {
+      for(int i = 0; i < arr.length; i += 1) {
+        arr[i] = arr[arr.length - i - 1];
+      }
+    }
+</code></pre>
 
 The code after bug fix:
 
-![ing](6.png)
+<pre><code>
+  static void reverseInPlace(int[] arr) {
+
+      int SIZE = arr.length;
+      int[] arr2 = new int[SIZE];
+      for(int i = 0; i< SIZE;i++){
+          arr2[i] = arr[i];
+      }
+      for(int i = 0; i < SIZE; i += 1) {
+        arr[i] = arr2[SIZE - i -1];
+    }
+      arr[SIZE-1] = arr2[0];
+  }
+</code></pre>
+
 
 Before I describe why the fix could address the issue,
 I would like to talk about what is the bug of the reverse method:
