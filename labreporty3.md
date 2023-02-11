@@ -67,7 +67,8 @@ The symptom:
     assertArrayEquals(new int[]{ 4,2,1 }, input2);
 	}</code></pre>
 
-![ing](4.png)
+![ing](B.png)
+![ing](C.png)
 
 The bug before fix:
 
