@@ -56,21 +56,26 @@ The Screenshot of /add-messag: Hello
 
 ![ing](8.png)
 
+If you type the command "/add-message?s=Hello" with the outcome "Hello", the method handleRequest is called with an instance of the java.net.URI class as the argument. The argument url in the method call would represent the URI with a path of "/add-message" and a query of "s=Hello".
+
+The relevant argument to the handleRequest method is url, which has a path of "/add-message" and a query of "s=Hello". The value of the strList field is an ArrayList of strings, which is initially empty.
+
+Since the path of the URI is "/add-message", the method splits the query into key-value pairs and checks if the first element is "s". If so, it adds the second element, which is "Hello", to the strList ArrayList. This means that the value of the strList field changes from an empty ArrayList to an ArrayList containing one element, "Hello".
+
+The method then returns the string "String added!" to indicate that the string "Hello" has been added to the ArrayList.
+
+
 The Screenshot of /add-messag: How are you
 
 ![ing](9.png)
 
-In this code, the method handleRequest is called with a URI object as an argument.
+If you type the command "/add-message?s=How are you" with the outcome "Hello How are you", the method handleRequest is called with an instance of the java.net.URI class as the argument. The argument url in the method call would represent the URI with a path of "/add-message" and a query of "s=How are you".
 
-The relevant argument to this method is the URI object, url, which represents the URL of the incoming request. The method first checks the path of the URL using url.getPath() and based on the path, it performs different actions.
+The relevant argument to the handleRequest method is url, which has a path of "/add-message" and a query of "s=How are you". The value of the strList field is an ArrayList of strings, which contains one element "Hello" from a previous request.
 
-If the path is "/add", it splits the query part of the URL using url.getQuery() and split("=") to get the value of the string to be added. If the first part of the split result is "s", it adds the string to the ArrayList strList using strList.add(parameters[1]).
+Since the path of the URI is "/add-message", the method splits the query into key-value pairs and checks if the first element is "s". If so, it adds the second element, which is "How are you", to the strList ArrayList. This means that the value of the strList field changes from an ArrayList containing one element "Hello" to an ArrayList containing two elements, "Hello" and "How are you".
 
-If the path is "/search", it splits the query part of the URL using url.getQuery() and split("=") to get the value of the string to be searched. If the first part of the split result is "s", it searches the ArrayList strList for the string using a loop and contains method. If the string is found, it adds it to the result string.
-
-If the path is neither "/add" nor "/search", it returns "404 Not Found!".
-
-The values of the relevant field strList change based on the incoming request. If the request is to add a string, the string gets added to the ArrayList. If the request is to search for a string, the ArrayList is searched for the string.
+The method then returns the string "String added!" to indicate that the string "How are you" has been added to the ArrayList.
 
 Part2:
 
