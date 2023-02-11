@@ -53,11 +53,11 @@ An input that doesn't induce a failure:
     ArrayExamples.reverseInPlace(input1);
     assertArrayEquals(new int[]{ 3 }, input1);
 	}
-
-//output:
-
-
 </code></pre>
+Output: 
+
+![ing](a.png)
+
 The symptom:
 
  <pre><code> @Test
