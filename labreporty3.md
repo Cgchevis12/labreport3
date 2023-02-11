@@ -37,9 +37,15 @@ A failure-including input for the buggy program(testReverseInPlace):
 
   
 
-An input that doesn't indce a failure:
+An input that doesn't induce a failure:
 
-![ing](2.png)
+<pre><code>
+	@Test 
+	public void testReverseInPlace() {
+    int[] input1 = { 3 };
+    ArrayExamples.reverseInPlace(input1);
+    assertArrayEquals(new int[]{ 3 }, input1);
+	}</code></pre>
 
 The symptom:
 
