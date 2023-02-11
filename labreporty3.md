@@ -49,7 +49,12 @@ An input that doesn't induce a failure:
 
 The symptom:
 
-![ing](3.png)
+ <pre><code> @Test
+  public void testReverseInPlace_1 () {
+    int[] input2 = { 1,2,4 };
+    ArrayExamples.reverseInPlace(input2);
+    assertArrayEquals(new int[]{ 4,2,1 }, input2);
+	}</code></pre>
 
 ![ing](4.png)
 
