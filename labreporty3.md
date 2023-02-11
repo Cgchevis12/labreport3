@@ -35,7 +35,7 @@ order 1,2,3 would be reverse to 3,2,1
 
 A failure-including input for the buggy program(testReverseInPlace):
 
-![ing](1.png)
+  
 
 An input that doesn't indce a failure:
 
