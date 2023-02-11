@@ -40,13 +40,24 @@ A failure-including input for the buggy program(testReverseInPlace):
 An input that doesn't induce a failure:
 
 <pre><code>
+//input:
+    static void reverseInPlace(int[] arr) {
+      for(int i = 0; i < arr.length; i += 1) {
+        arr[i] = arr[arr.length - i - 1];
+      }
+    }
+//test:
 	@Test 
 	public void testReverseInPlace() {
     int[] input1 = { 3 };
     ArrayExamples.reverseInPlace(input1);
     assertArrayEquals(new int[]{ 3 }, input1);
-	}</code></pre>
+	}
 
+//output:
+
+
+</code></pre>
 The symptom:
 
  <pre><code> @Test
