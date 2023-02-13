@@ -1,4 +1,5 @@
-Part1:<pre><code>
+Part1:
+
 	class SearchHandler implements URLHandler {
 	ArrayList<String> strList = new ArrayList<String>();
 
@@ -23,7 +24,7 @@ Part1:<pre><code>
 		}
 
 		return "404 Not Found!";
-	}</code></pre>
+	}
 	
 
 
