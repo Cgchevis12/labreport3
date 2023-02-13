@@ -2,13 +2,8 @@ Part1:
 The code of StringServer: 
 
 
-<pre><code> import java.io.IOException;
-import java.net.URI;
-import java.util.ArrayList;
 
-class SearchHandler implements URLHandler {
-	// The one bit of state on the server: a number that will be manipulated by
-	// various requests.
+<pre><code> class SearchHandler implements URLHandler {
 	ArrayList<String> strList = new ArrayList<String>();
 
 	public String handleRequest(URI url) {
