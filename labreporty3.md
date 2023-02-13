@@ -50,11 +50,11 @@ class SearchEngine {
 
 The Screenshot of the outcome of adding:Hello
 
-![ing](7.png)
+![imag](7.png)
 
 The Screenshot of /add-messag: Hello
 
-![ing](8.png)
+![imag](8.png)
 
 If you type the command "/add-message?s=Hello" with the outcome "Hello", the method handleRequest is called with an instance of the java.net.URI class as the argument. The argument url in the method call would represent the URI with a path of "/add-message" and a query of "s=Hello".
 
@@ -67,7 +67,7 @@ The method then returns the string "String added!" to indicate that the string "
 
 The Screenshot of /add-messag: How are you
 
-![ing](9.png)
+![imag](9.png)
 
 If you type the command "/add-message?s=How are you" with the outcome "Hello How are you", the method handleRequest is called with an instance of the java.net.URI class as the argument. The argument url in the method call would represent the URI with a path of "/add-message" and a query of "s=How are you".
 
@@ -106,7 +106,7 @@ An input that doesn't induce a failure:
 </code></pre>
 Output: 
 
-![ing](a.png)
+![imag](a.png)
 
 The symptom:
 
@@ -117,8 +117,8 @@ The symptom:
     assertArrayEquals(new int[]{ 4,2,1 }, input2);
 	}</code></pre>
 
-![ing](B.png)
-![ing](C.png)
+![imag](B.png)
+![imag](C.png)
 
 The bug before fix:
 <pre><code>
