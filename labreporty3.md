@@ -1,7 +1,6 @@
 Part1:
-The code of StringServer: 
 
- 	class SearchHandler implements URLHandler {
+<pre><code>class SearchHandler implements URLHandler {
 	ArrayList<String> strList = new ArrayList<String>();
 
 	public String handleRequest(URI url) {
@@ -26,6 +25,7 @@ The code of StringServer:
 
 		return "404 Not Found!";
 	}
+</code></pre>
 
 
 
@@ -128,17 +128,17 @@ The code after bug fix:
 </code></pre>
 
 
-<h2> Potential Issues I fixed in the Program 2</h2>
-<h3> Issue 1: Short Reverse 3</h3>
+<h2> Potential Issues I fixed in the Program </h2>
+<h3> Issue 1: Short Reverse </h3>
 The last element of the array will not change after the execution of the code in the case of a short reverse. This is due to the author's oversight in not appending the first index of elements in the original array to the current end of the array.
 
-<h3> Issue 2: Long Reverse 3</h3>
+<h3> Issue 2: Long Reverse </h3>
 In the case of a long reverse, the elements in the latter half of the array will re-reverse the order after the execution of the code. This is because the array is too long and thus re-reverses itself in the middle.
 
 For instance, the array {9,0,0,4,3,8,3,4,0,0,9} would result from {1,2,4,6,7,8,3,4,0,0,9}.
 
-<h3> Solution 3</h3>
+<h3> Solution </h3>
 To resolve both of these bugs, a deep copy of the array named 'NewArray' can be created using a for loop. The order of the array can then be reversed according to 'NewArray' using another for loop. This will ensure that all elements are copied and the order of the array is successfully reversed.
 
-<h2> Week 3 Lab: Debugging with JUnit 2</h2>
+<h2> Week 3 Lab: Debugging with JUnit </h2>
 In the lab of week3, I learned a lot especially I learned how to use the Junit to proper debug my code. Before the week3, I only know how to use Junit to find out the location of the bug. Now, I've already understand how to use the Junit to proper check each part of my code that could highly improve my efficiency on debugging like dividing the test code into sub-cases and checking.
