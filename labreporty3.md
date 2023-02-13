@@ -1,6 +1,6 @@
 Part1:
 The code of StringServer:
-<!-- <pre><code>
+<pre><code>
 import java.io.IOException;
 import java.net.URI;
 import java.util.ArrayList;
@@ -46,7 +46,7 @@ class SearchEngine {
 
 		Server.start(port, new SearchHandler());
 	}
-}</code></pre> -->
+}<\code><\pre>
 
 The Screenshot of the outcome of adding:Hello
 
