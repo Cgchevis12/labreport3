@@ -1,9 +1,7 @@
 Part1:
 The code of StringServer: 
 
-
-
-<pre><code> class SearchHandler implements URLHandler {
+ 	class SearchHandler implements URLHandler {
 	ArrayList<String> strList = new ArrayList<String>();
 
 	public String handleRequest(URI url) {
@@ -28,7 +26,7 @@ The code of StringServer:
 
 		return "404 Not Found!";
 	}
-} </code></pre>
+
 
 
 The Screenshot of the outcome of adding:Hello
