@@ -1,5 +1,5 @@
 Part1:
-The code of StringServer:
+The code of StringServer: 
 ```
 import java.io.IOException;
 import java.net.URI;
