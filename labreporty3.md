@@ -1,6 +1,5 @@
-Part1:
-
-<pre><code>class SearchHandler implements URLHandler {
+Part1:<pre><code>
+	class SearchHandler implements URLHandler {
 	ArrayList<String> strList = new ArrayList<String>();
 
 	public String handleRequest(URI url) {
@@ -24,8 +23,8 @@ Part1:
 		}
 
 		return "404 Not Found!";
-	}
-</code></pre>
+	}</code></pre>
+	
 
 
 
